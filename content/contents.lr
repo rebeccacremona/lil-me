@@ -1,5 +1,5 @@
-title: Welcome to Lil' Me!
+_model: index
 ---
-body:
-
-We're a dynamic group of thinkers and doers.
+title: People
+---
+people:

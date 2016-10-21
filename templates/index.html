@@ -1,0 +1,9 @@
+{% extends "page.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  {% for person in this.people.blocks | sort(attribute='lastname') %}
+    {% if person.active %}
+        {{person}}
+    {% endif %}
+  {% endfor %}
+{% endblock %}
