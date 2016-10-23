@@ -1,15 +1,13 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — {{ site.config.PROJECT.name }}</title>
+<title>{{ site.config.PROJECT.name }} | Curls and Such</title>
 <body>
-  <header>
-    <h1>{{ site.config.PROJECT.name }}</h1>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2016 by Rebecca Lynn Cremona.
-  </footer>
+    <header>
+      <h1>{{ site.config.PROJECT.name }}</h1>
+      <button id="new-bios" type="button">see new bios</button>
+    </header>
+    <div class="page">
+      {% block body %}{% endblock %}
+    </div>
 </body>

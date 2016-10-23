@@ -3,3 +3,76 @@ _model: index
 title: People
 ---
 people:
+
+#### person ####
+fullname: Joe Yacobowski
+----
+active: yes
+----
+jobtitle: Product Lead
+----
+nickname: Joe
+----
+lastname: Yacobowski
+----
+portrait: two.png
+#### person ####
+fullname: Helen Stabach
+----
+active: yes
+----
+jobtitle: Project Mananger
+----
+nickname: Helen
+----
+lastname: Stabach
+----
+portrait: one.png
+#### person ####
+fullname: Joseph Ratzinger
+----
+active: yes
+----
+jobtitle: Consultant
+----
+nickname: His Holiness
+----
+lastname: Ratzinger
+----
+portrait: two.png
+#### person ####
+fullname: Genevieve Geranium
+----
+active: yes
+----
+jobtitle: Ninja
+----
+nickname: Genny
+----
+lastname: Geranium
+----
+portrait: three.jpg
+#### person ####
+fullname: Jack Sprat
+----
+active: yes
+----
+jobtitle: Developer
+----
+nickname: Jack
+----
+lastname: Sprat
+----
+portrait: two.png
+#### person ####
+fullname: Eloise Curtis
+----
+active: yes
+----
+jobtitle: Developer
+----
+nickname: Eloise
+----
+lastname: Curtis
+----
+portrait: four.jpeg

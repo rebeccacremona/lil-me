@@ -1,31 +1,56 @@
-/* This is the Lektor quickstart css */
 body {
-    font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0 0 5% 5%;
 }
 
-a {
-    color: #2a99b6;
+header {
+    margin: 125px 0 75px 0;
 }
 
-a:hover {
-    color: #33bbdf;
-}
-
-header, footer, div.page {
-    width: 760px;
-    margin: 0 auto;
-    background: #daeef3;
-    padding: 20px 30px;
-}
-
-header h1 {
-    color: #169bbd;
-    margin: 0;
+h1 {
     font-weight: normal;
-    font-size: 42px;
+    text-transform: lowercase;
+    font-size: 1.2em;
+    margin-bottom: 0;
 }
 
-div.page {
-    background: #f1fbfe;
+#new-bios {
+    background-color: #eee;
+    font-size: .5em;
+    padding: 3px 12px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#new-bios:hover, #new-bios:focus {
+    background-color: #CCFF66;
+}
+
+.person h3 {
+    font-size: .8em;
+    margin-bottom: 0;
+}
+
+.people-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    padding: 5%;
+    flex-basis: 20%;
+    font-size: .8em;
+}
+
+.job-title {
+    font-size: .8em;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
 }
