@@ -15,6 +15,8 @@ nickname: Joe
 ----
 lastname: Yacobowski
 ----
+pronoun: He
+----
 portrait: two.png
 #### person ####
 fullname: Helen Stabach
@@ -26,6 +28,8 @@ jobtitle: Project Mananger
 nickname: Helen
 ----
 lastname: Stabach
+----
+pronoun: She
 ----
 portrait: one.png
 #### person ####
@@ -39,6 +43,8 @@ nickname: His Holiness
 ----
 lastname: Ratzinger
 ----
+pronoun: He
+----
 portrait: two.png
 #### person ####
 fullname: Genevieve Geranium
@@ -50,6 +56,8 @@ jobtitle: Ninja
 nickname: Genny
 ----
 lastname: Geranium
+----
+pronoun: She
 ----
 portrait: three.jpg
 #### person ####
@@ -63,6 +71,8 @@ nickname: Jack
 ----
 lastname: Sprat
 ----
+pronoun: He
+----
 portrait: two.png
 #### person ####
 fullname: Eloise Curtis
@@ -74,5 +84,7 @@ jobtitle: Developer
 nickname: Eloise
 ----
 lastname: Curtis
+----
+pronoun: She
 ----
 portrait: four.jpeg
