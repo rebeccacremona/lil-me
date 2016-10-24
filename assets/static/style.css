@@ -24,7 +24,12 @@ h1 {
     letter-spacing: 1px;
 }
 
-#new-bios:hover, #new-bios:focus {
+#new-bios:focus {
+    background-color: #CCFFFF;
+    outline: none;
+}
+
+#new-bios:hover {
     background-color: #CCFF66;
 }
 
