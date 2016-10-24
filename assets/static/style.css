@@ -1,3 +1,6 @@
+html {
+    font-size: 20px;
+}
 body {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
@@ -11,13 +14,13 @@ header {
 h1 {
     font-weight: normal;
     text-transform: lowercase;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 0;
 }
 
 #new-bios {
     background-color: #eee;
-    font-size: .5em;
+    font-size: .5rem;
     padding: 3px 12px;
     border: 0 none;
     font-weight: 700;
@@ -34,7 +37,7 @@ h1 {
 }
 
 .person h3 {
-    font-size: .8em;
+    font-size: .8rem;
     margin-bottom: 0;
 }
 
@@ -45,13 +48,13 @@ h1 {
 }
 
 .person {
-    padding: 5%;
-    flex-basis: 20%;
-    font-size: .8em;
+    padding: 25px;
+    flex-basis: 25%;
+    font-size: .8rem;
 }
 
 .job-title {
-    font-size: .8em;
+    font-size: .8rem;
 }
 
 .circle {
