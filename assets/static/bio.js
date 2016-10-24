@@ -39,6 +39,14 @@ function listToPhrase(list) {
     return [list.slice(0, -1).join(', '), list.slice(-1)[0]].join(link)
 }
 
+function repeat(array, n){
+    var out = [];
+    for(var i = 0; i < n; i++) {
+        out = out.concat(array);
+    }
+    return out;
+}
+
 //
 // BIO GENERATORS
 //
@@ -105,7 +113,7 @@ function aFewPhrases(type, count, person) {
         'eating cheese',
         'writing bogus git tutorials (mwahaha)',
         'microwaving random stuff',
-        'making marshmallow sculptures',
+        'marshmallow sculptures',
         'ironing ties',
         'hunting down broad-leaved weeds',
         'jaywalking in the rain',
@@ -120,7 +128,6 @@ function aFewPhrases(type, count, person) {
 
     var identities = [
         'a peanut enthusiast',
-        'an amateur hanglider',
         'an ex-con',
         'former class president',
         'an Olympic curler',
@@ -130,14 +137,13 @@ function aFewPhrases(type, count, person) {
         'a sock enthusiast',
         'an infamous sneak',
         'a haberdasher',
-        'a former seltzer artist',
+        'a seltzer artist',
         'an award-winning monkey trainer',
         'a big fan of sheep',
         'a rockstar tax analyst',
         'an arachnophobe',
         'a determined solitaire player',
         'a reckless driver',
-        'a proponent of tart citrus',
         'a big fan of ardvarks',
         'a refactoring machine',
         'a universal maven',
@@ -166,7 +172,8 @@ function whyHere(person) {
         'because of rampant nepotism',
         'as an advertising stunt',
         'from 11:30 to noon on Tuesdays',
-        'to say you are all mispronouncing Worcestershire',
+        'to say you are all mispronouncing "Worcestershire"',
+        'to say you are all mispronouncing "Isthmus"',
         'for the money'
     ];
 
@@ -209,15 +216,16 @@ window.onload = function () {
         builder,
         hobbies,
         intent
-    ]
+    ];
 
     var bios = document.getElementsByClassName("bio");
+    bioOptions = shuffle(repeat(bioOptions, (bios.length / 3) + 1));
     for (var index in bios) {
         if (!bios.hasOwnProperty(index)) {
             continue;
         }
         var bio = bios[index];
-        var bioType = getRandomElement(bioOptions)
+        var bioType = bioOptions[index]
         bio.appendChild(bioType(bio));
     }
 }
