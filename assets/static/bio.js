@@ -211,7 +211,7 @@ function intent(bio) {
 // DOM Manipulation
 //
 
-window.onload = function () {
+function loadBios(){
     var bioOptions = [
         builder,
         hobbies,
@@ -228,5 +228,23 @@ window.onload = function () {
         var bioType = bioOptions[index]
         bio.appendChild(bioType(bio));
     }
+}
+
+function clearBios(){
+    var bios = document.getElementsByClassName("bio");
+    for (var index in bios) {
+        var bio = bios[index];
+        while (bio.firstChild) {
+            bio.removeChild(bio.firstChild);
+        }
+    }
+}
+
+window.onload = function () {
+    loadBios();
+    document.getElementById('new-bios').addEventListener("click", function(e) {
+        clearBios();
+        loadBios();
+    }, false);
 }
 
