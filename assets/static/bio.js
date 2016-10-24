@@ -49,8 +49,7 @@ function builtSomething(person) {
         'Python',
         'Pascal',
         'Jaskell'
-
-    ]
+    ];
 
     var built = [
         'webserver',
@@ -58,7 +57,7 @@ function builtSomething(person) {
         'reed organ',
         'toaster oven',
         'wireless access point'
-    ]
+    ];
 
     var components = [
         'a paperclip',
@@ -81,11 +80,11 @@ function builtSomething(person) {
         getRandomElement(language) + " script",
         shuffled[0],
         shuffled[1]
-    ]
+    ];
 
     return person + " once built a working " +
-          getRandomElement(built) + " using only a " +
-          listToPhrase(list) + "."
+        getRandomElement(built) + " using only a " +
+        listToPhrase(list) + "."
     ;
 
 }
@@ -123,7 +122,6 @@ function aFewPhrases(type, count, person) {
         'a peanut enthusiast',
         'an amateur hanglider',
         'an ex-con',
-        'a mathematician',
         'former class president',
         'an Olympic curler',
         'a volunteer zookeeper',
@@ -154,10 +152,25 @@ function aFewPhrases(type, count, person) {
        var verb = getRandomElement(likes);
    }
 
-    var list = shuffled.slice(0,count)
-
+    var list = shuffled.slice(0,count);
     return person + " " + verb + " " + listToPhrase(list) + ".";
 
+}
+
+function whyHere(person) {
+    var reason = [
+        'to tell you no',
+        'for the food',
+        'to promote the adoption of Funday, following Saturday and Sunday',
+        'until the paperwork goes through',
+        'because of rampant nepotism',
+        'as an advertising stunt',
+        'from 11:30 to noon on Tuesdays',
+        'to say you are all mispronouncing Worcestershire',
+        'for the money'
+    ];
+
+    return person + " is just here " + getRandomElement(reason) + ".";
 }
 
 //
@@ -180,6 +193,13 @@ function hobbies(bio) {
     )
 }
 
+function intent(bio) {
+    return document.createTextNode(
+        aFewPhrases("identities", 2, bio.dataset.name) +
+        " " + whyHere(bio.dataset.pronoun)
+    )
+}
+
 //
 // DOM Manipulation
 //
@@ -187,7 +207,8 @@ function hobbies(bio) {
 window.onload = function () {
     var bioOptions = [
         builder,
-        hobbies
+        hobbies,
+        intent
     ]
 
     var bios = document.getElementsByClassName("bio");
