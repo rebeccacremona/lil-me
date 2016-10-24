@@ -137,7 +137,7 @@ function aFewPhrases(type, count, person) {
         'a sock enthusiast',
         'an infamous sneak',
         'a haberdasher',
-        'a seltzer artist',
+        'a buckle artist',
         'an award-winning monkey trainer',
         'a big fan of sheep',
         'a rockstar tax analyst',
@@ -166,11 +166,11 @@ function aFewPhrases(type, count, person) {
 function whyHere(person) {
     var reason = [
         'to tell you no',
-        'for the food',
+        'for the condiments',
         'to promote the adoption of Funday, following Saturday and Sunday',
         'until the paperwork goes through',
         'because of rampant nepotism',
-        'as an advertising stunt',
+        'as a publicity stunt',
         'from 11:30 to noon on Tuesdays',
         'to say you are all mispronouncing "Worcestershire"',
         'to say you are all mispronouncing "Isthmus"',
